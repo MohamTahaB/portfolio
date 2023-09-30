@@ -18,7 +18,12 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = [
+  'Software Engineer',
+  'Foody',
+  'Football Fanatic',
+  'Maths Enthusiast',
+];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -68,9 +73,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Student + Software Engineer"
+        description="Personal website of Mohamed Taha Bayoumi — a Computer Science Student @Telecom Paris, SWE Intern @Bigblue, and aspiring to pursue the career of Software Engineering."
       />
       <Intro
         id="intro"
